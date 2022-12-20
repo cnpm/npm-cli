@@ -1,0 +1,106 @@
+{
+  "_id": "test-bin-link-1",
+  "_rev": "1-e96f4a57bf00a1429ea8a006ac1b097a",
+  "name": "test-bin-link-1",
+  "dist-tags": {
+    "latest": "1.0.1"
+  },
+  "versions": {
+    "1.0.0": {
+      "name": "test-bin-link-1",
+      "version": "1.0.0",
+      "bin": {
+        "test-bin-link-1": "bin/index.js"
+      },
+      "_id": "test-bin-link-1@1.0.0",
+      "_nodeVersion": "16.15.1",
+      "_npmVersion": "8.19.1",
+      "dist": {
+        "integrity": "sha512-/GThcwNGUE8JOi8ZGI9XUUYtbJWqi8FOp1WbvDuCRRg2KsBRAXCDtahRkvhd1OmpqB5dziA9RFfPk//QQN3PSA==",
+        "shasum": "72f3f20637ca34a7a1ddab37fa04110098b756fc",
+        "tarball": "https://registry.npmjs.org/test-bin-link-1/-/test-bin-link-1-1.0.0.tgz",
+        "fileCount": 2,
+        "unpackedSize": 148,
+        "signatures": [
+          {
+            "keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+            "sig": "MEQCIEpkJt5tvuiIBXQbK1ZgnuNy8gNyQAMCtRueugzCNf+QAiAeBkPc4h2lYB8TnpFc6rcPrM+BkDSPf7qw2nuwZFtL9g=="
+          }
+        ],
+        "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v4.10.10\r\nComment: https://openpgpjs.org\r\n\r\nwsFzBAEBCAAGBQJjNIoTACEJED1NWxICdlZqFiEECWMYAoorWMhJKdjhPU1b\r\nEgJ2Vmq0Yg//TCaYWkh9a8NJQey4r1jGYx1/CuSNmHDA9ht8pbEv+d1ijJ/i\r\n45Ib3hqfujTNX0sE5l78RWsF0DN2ypwg5PyHU6JvzwYQ2VYiCW/Y+IPxM5or\r\nKIeno1eXaTNM9OkjK5Qbr3BBG7qjrSINYd54eeY7hf4FHZaCjnxRh+GwnAIC\r\nMBoYBDdgTN8IlLQ7sQBToPESSc5hl4ltSzQw/fCkwxPIY/vJSOYPYXUdl/uG\r\n1cb8ubic0QQHo9x5qkLukNhEbfvc6veY3bsElsacN1/FQWsGS/8FkD8urGtE\r\n5kQkeAqiZ8tUwPchKmmhBzS1OsvTA1+aQxgSa2umUMPq7tx5BOHt/lX6A6FN\r\nHFgF0N5Hs2xhYoGKCDb3od+NskGtCuBz4KjtMVDNcppT2nW1qI0tglDaIuHY\r\nXTysvefpOOK/i2hUliZsQ/b3BsaKqAj+DuoMwPVZmZivBAifhby1J14vrPTB\r\nWjcetLzvQHH+5UI05AUEqGxNy0HBUekfLu6ix2p2X5i3cRBJ0H4hnRvq078C\r\n4N+zkxiE11kvfcbSJ8McBpparySK2yxRP/dyO8jdzQfYtwm7pcafUIisHVQg\r\nsialXPdhAwtCn680KZP4Kjd5wByDtHm/s4OJCyNhtEa+S1v5hk2C0lU8eETy\r\nhjEkTYsmIjsKV9WeTe7tGTYU9fuA5gkS11M=\r\n=A0GM\r\n-----END PGP SIGNATURE-----\r\n"
+      },
+      "_npmUser": {
+        "name": "gemwuu",
+        "email": "gemwuu@gmail.com"
+      },
+      "directories": {},
+      "maintainers": [
+        {
+          "name": "gemwuu",
+          "email": "gemwuu@gmail.com"
+        }
+      ],
+      "_npmOperationalInternal": {
+        "host": "s3://npm-registry-packages",
+        "tmp": "tmp/test-bin-link-1_1.0.0_1664387603257_0.5207860424746507"
+      },
+      "_hasShrinkwrap": false
+    },
+    "1.0.1": {
+      "name": "test-bin-link-1",
+      "version": "1.0.1",
+      "bin": {
+        "echo": "bin/index.js"
+      },
+      "_id": "test-bin-link-1@1.0.1",
+      "_nodeVersion": "16.15.1",
+      "_npmVersion": "8.19.1",
+      "dist": {
+        "integrity": "sha512-RuD47vKWXU+xPxJo+00+6TwQIHCm0IDXVcb3ofLCagk+eFnnyKK7RdfW7SIdR5TkAawt7+tYOpFhPzmAAufYbA==",
+        "shasum": "a476b9ac8bfc185f848151e41217dc0e7e546c0c",
+        "tarball": "https://registry.npmjs.org/test-bin-link-1/-/test-bin-link-1-1.0.1.tgz",
+        "fileCount": 2,
+        "unpackedSize": 166,
+        "signatures": [
+          {
+            "keyid": "SHA256:jl3bwswu80PjjokCgh0o2w5c2U4LhQAE57gj9cz1kzA",
+            "sig": "MEUCICZAaapW8fZfCKX6/6yT3bIFqoopDzByUYn6B5jSXVPGAiEAnTVk/Tstkk+FX944Z5XwuFOr1fvYQH8fOyseLbbJauw="
+          }
+        ],
+        "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v4.10.10\r\nComment: https://openpgpjs.org\r\n\r\nwsFzBAEBCAAGBQJjNIrhACEJED1NWxICdlZqFiEECWMYAoorWMhJKdjhPU1b\r\nEgJ2VmoTZg//cRA20RK14b/oTNJYxWsVVAQzjjChg5ytcQp5VcXhe9HEovnl\r\ny5CrhyhyfnVU0r5A/bUiIs0HdYWuXNZdwzY7n8bNHYW7PGdjtIibChYx+uVI\r\nN9Yhm4nJVgU8r+tkqpeez+/lOKJeoyYszsD34jm9eI5m6AC1kMSu8Dax9JVv\r\nEe/Fw++HFQSygO/p79A2DkRbSixdmlmj+cjo8attzzF0LsLMB/Uq4g/PVsw+\r\n2HcwYh0fTTcX5pqyZCOQBfoR+LON6UBtYpnRTJvmogW0WRITiYH3Jl3IpOmH\r\n7iAWHGU/BPUqmm+XbQ5wB/cEGGJi3n14ocQBFd1FKeeajkeKsMaTn0HKjO7U\r\n4q8l3wM8VM+oMFrTf2ceHQ6BdysLjtOuSQ6rBGugvAlApe3MzZsIF7UoArXP\r\nB1Iq3lRG8tifbCRJMP/HUGwuZHirCSBrk6rhTfJUxvezJSf4/6bWBZoow7NT\r\np1lih0cpeuyunMUa6Sqbkb90oB59WPMY7BL0TItabTW3T+1PXTwo2rK8C2o/\r\nt9ZdHCtmGfsLyWhDCuhG9kM6mVZu3yM8/8jpG/C3YLzLkfVTp/ASQX3O08vx\r\nbHDyN0Po09NkpmvcR2IVy3LQ2Y3GKu2hNx1Kw4/zYDlJH7Xh2A+pw/2RT4qC\r\nfOmFtqhjbpkvZ5F39ECGxqgE/a6SqeT0jBU=\r\n=6vu7\r\n-----END PGP SIGNATURE-----\r\n"
+      },
+      "_npmUser": {
+        "name": "gemwuu",
+        "email": "gemwuu@gmail.com"
+      },
+      "directories": {},
+      "maintainers": [
+        {
+          "name": "gemwuu",
+          "email": "gemwuu@gmail.com"
+        }
+      ],
+      "_npmOperationalInternal": {
+        "host": "s3://npm-registry-packages",
+        "tmp": "tmp/test-bin-link-1_1.0.1_1664387809724_0.8126438191952681"
+      },
+      "_hasShrinkwrap": false
+    }
+  },
+  "time": {
+    "created": "2022-09-28T17:53:23.256Z",
+    "1.0.0": "2022-09-28T17:53:23.393Z",
+    "modified": "2022-09-28T17:56:49.991Z",
+    "1.0.1": "2022-09-28T17:56:49.894Z"
+  },
+  "maintainers": [
+    {
+      "name": "gemwuu",
+      "email": "gemwuu@gmail.com"
+    }
+  ],
+  "readme": "ERROR: No README data found!",
+  "readmeFilename": "",
+  "_cached": false,
+  "_contentLength": 0
+}

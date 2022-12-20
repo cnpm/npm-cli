@@ -1129,6 +1129,23 @@ t.test('bin links adding and removing', t => {
     .then(() => t.throws(() => fs.statSync(rbin))) // should be gone
 })
 
+t.test('should keep bin links when both prod and dev deps has the same bin and install with `--omit=dev`', t => {
+  const path = t.testdir({
+    'package.json': JSON.stringify({
+      dependencies: {
+        'test-bin-link-1': '1.0.1',
+      },
+      devDependencies: {
+        'test-bin-link-2': '1.0.1',
+      },
+    }),
+  })
+
+  const bin = resolve(path, 'node_modules/.bin/echo' + process.platform === 'win32' ? '.cmd' : '')
+  return reify(path, { omit: ['dev'] })
+    .then(() => fs.statSync(bin)) // should be there
+})
+
 t.test('global style', t => {
   const path = t.testdir()
   const nm = resolve(path, 'node_modules')

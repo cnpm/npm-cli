@@ -55,6 +55,9 @@ const _trashList = Symbol.for('trashList')
 const _handleOptionalFailure = Symbol.for('handleOptionalFailure')
 const _loadTrees = Symbol.for('loadTrees')
 
+// the complement of _trashList binPaths
+const _trashListBinPathsComplement = Symbol('trashListBinPathsComplement')
+
 // shared symbols for swapping out when testing
 const _diffTrees = Symbol.for('diffTrees')
 const _createSparseTree = Symbol.for('createSparseTree')
@@ -129,6 +132,7 @@ module.exports = cls => class Reifier extends cls {
     this[_sparseTreeDirs] = new Set()
     this[_sparseTreeRoots] = new Set()
     this[_trashList] = new Set()
+    this[_trashListBinPathsComplement] = new Set()
     // the nodes we unpack to read their bundles
     this[_bundleUnpacked] = new Set()
     // child nodes we'd EXPECT to be included in a bundle, but aren't
@@ -466,14 +470,21 @@ module.exports = cls => class Reifier extends cls {
 
     process.emit('time', 'reify:trashOmits')
 
-    const filter = node =>
-      node.top.isProjectRoot &&
+    const filter = node => {
+      const isTrash = node.top.isProjectRoot &&
         (
           node.peer && this[_omitPeer] ||
           node.dev && this[_omitDev] ||
           node.optional && this[_omitOptional] ||
           node.devOptional && this[_omitOptional] && this[_omitDev]
         )
+
+      if (!isTrash && node.binPaths.length > 0) {
+        node.binPaths.forEach(binPath => this[_trashListBinPathsComplement].add(binPath))
+      }
+
+      return isTrash
+    }
 
     for (const node of this.idealTree.inventory.filter(filter)) {
       this[_addNodeToTrashList](node)
@@ -1146,7 +1157,11 @@ module.exports = cls => class Reifier extends cls {
     const _rm = path => rm(path, { recursive: true, force: true }).catch(er => failures.push([path, er]))
 
     for (const path of this[_trashList]) {
-      promises.push(_rm(path))
+      // some packages share the same bin paths,
+      // keep the bin paths not in the trashList
+      if (!this[_trashListBinPathsComplement].has(path)) {
+        promises.push(_rm(path))
+      }
     }
 
     await promiseAllRejectLate(promises)
